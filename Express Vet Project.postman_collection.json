@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "1070952d-4ea3-43ed-9ce2-503b29a38ea0",
+		"name": "Express Vet Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20461823"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Admin Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjQ0OTAzZWFlNzZhMDEzMjJiZjM0ZmI1IiwiaWF0IjoxNjgyNTA2NzQwfQ._YW0NhQPFv7TvjUFm6VNyChrB80jC1OkLwiF9NWmoPk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/user/profile/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"profile",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Client Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjQ0OTAzZWFlNzZhMDEzMjJiZjM0ZmI1IiwiaWF0IjoxNjgyNTA2NzQwfQ._YW0NhQPFv7TvjUFm6VNyChrB80jC1OkLwiF9NWmoPk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/user/client-profile/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"client-profile",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"adsasdasd\",\r\n    \"email\": \"raisdassid@gmail.com\",\r\n    \"password\": \"adasdsdfasda\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/register/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"register",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"raisdassid@gmail.com\",\r\n    \"password\": \"adasdsdfasda\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/login/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Animal",
+			"item": [
+				{
+					"name": "Create Animal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/animal/create/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animal",
+								"create",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Animal",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/animal/update/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animal",
+								"update",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Animal",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDRhNWEwZWQ1ZmViZDgxMjYwOTgzNzYiLCJyb2xlIjoiY2xpZW50IiwiaWF0IjoxNjgyNjA2MTczfQ.0ZyBYOerNbnawj_QmB4-s6WNKZ6MvYyvGsG9fFJ6Mr4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/animal/delete/644a5a3cd5febd812609837a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animal",
+								"delete",
+								"644a5a3cd5febd812609837a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointemnt",
+			"item": [
+				{
+					"name": "Create Appointment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/appointment/create/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"appointment",
+								"create",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Appointment",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/appointment/create/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"appointment",
+								"create",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
